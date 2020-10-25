@@ -100,7 +100,7 @@
             <configuration>
                 <url>http://localhost:8080/manager/html</url>
                 <server>devops</server>
-                <path>/manager</path>
+                <path>/devops</path>
             </configuration>
         </plugin>
 		</plugins>
