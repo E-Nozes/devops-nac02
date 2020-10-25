@@ -80,8 +80,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>servidor_producao</id>
-			<name>servidor_producao</name>
+			<id>devops</id>
+			<name>servidor_devops</name>
 			<url>http://localhost:8080/manager/html</url>
 		</repository>
 	</distributionManagement>
@@ -99,8 +99,8 @@
             <version>2.2</version>
             <configuration>
                 <url>http://localhost:8080/manager/html</url>
-                <server>servidor_producao</server>
-                <path>/devops-nac02</path>
+                <server>devops</server>
+                <path>/manager</path>
             </configuration>
         </plugin>
 		</plugins>

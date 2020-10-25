@@ -5,9 +5,9 @@ https://maven.apache.org/xsd/settings-1.0.0.xsd">
                       
     <servers>
       <server>
-        <id>servidor_producao</id>
-        <username>admin</username>
-        <password>admin</password>
+        <id>devops</id>
+        <username>tomcat</username>
+        <password>tomcat</password>
       </server>
     </servers>
 </settings>
