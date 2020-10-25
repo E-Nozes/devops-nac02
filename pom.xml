@@ -80,9 +80,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>TomCatDevops</id>
-			<name>TomCatDevops</name>
-			<url>http://localhost:8080/manager/html</url>
+			<id>servidor_producao</id>
+			<name>servidor_producao</name>
+			<url>http://localhost:8080/manager/text</url>
 		</repository>
 	</distributionManagement>
 
@@ -92,6 +92,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
+            <configuration>
+                <url>http://localhost:8080/manager/text</url>
+                <server>servidor_producao</server>
+                <path>/devops-nac02</path>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 
