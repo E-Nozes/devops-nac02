@@ -78,6 +78,13 @@
 
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>devops</id>
+			<name>servidor_devops</name>
+			<url>http://localhost:8080/manager/html</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -85,8 +92,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
-
+			
+			<plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.2</version>
+            <configuration>
+                <url>http://localhost:8080/manager/html</url>
+                <server>devops</server>
+                <path>/manager</path>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 
