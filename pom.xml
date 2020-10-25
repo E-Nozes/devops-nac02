@@ -81,8 +81,8 @@
 	<distributionManagement>
 		<repository>
 			<id>devops</id>
-			<name>servidor_producao</name>
-			<url>http://localhost:8080/manager/html</url>
+			<name>devops</name>
+			<url>http://localhost:8080/manager/</url>
 		</repository>
 	</distributionManagement>
 
